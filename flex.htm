@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        width: 80%;
+        margin: auto;
+        min-height: 40px;
+        display: flex;
+        /* border: 5px solid black; */
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: royalblue;
+      }
+      .header .logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* display: inline-block; */
+        background: yellow;
+      }
+      .logo h3 {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 1.1em;
+        color: white;
+      }
+      .header .menu {
+        width: 100%;
+        background: pink;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+        align-items: center;
+        /* display: inline-block; */
+      /* }
+      .menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      } */
+      /* ul li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 1em;
+      } */
+      @media only screen and (max-width: 400px) {
+        .header {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .header .logo {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+        }
+        .menu{
+          width: 100%;
+        }
+
+        .menu ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><h3>Company Name</h3></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contect</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background: #b0c5a4;
+      }
+      /* .box {
+        width: 50%;
+        border: 5px solid black;
+      } */
+
+      input[id="Adress"] {
+      }
+      table {
+        border: 1px solid black;
+      }
+      td,
+      tr,
+      td {
+        border: 1px solid black;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+      }
+      td,
+      tr,
+      table {
+        border-collapse: collapse;
+        margin-left: 100px;
+        margin-top: -20px;
+      }
+      table input {
+        border: none;
+        outline: none;
+      }
+      label {
+        font-family: algerin;
+        color: black;
+        margin-right: 50px;
+      }
+      label[for="city"] {
+        margin-right: 75px;
+      }
+      label[for="Email"] {
+        margin-right: 78px;
+      }
+      .bos {
+        width: 100%;
+        /* border: 1px solid lavender; */
+      }
+
+      label[for="Adress"] {
+        float: left;
+        /* color: black; */
+      }
+      input[id="Adress"] {
+        /* color: black; */
+        float: right;
+      }
+      input[type="submit"] {
+        width: 100px;
+        padding: 7px;
+        background: purple;
+        color: aliceblue;
+        border-radius: 20px;
+        margin-left: 30%;
+      }
+      input[type="reset"] {
+        width: 100px;
+        padding: 7px;
+        background: purple;
+        color: aliceblue;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Student Form</h1>
+      <form action="#" method="post">
+        <label for="fristname">First Name</label>
+        <input type="text" id="fristname" name="fristname" /><br /><br />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" /><br /><br />
+
+        <label for="DateofBirth">Date of Birth</label>
+        <input type="date" name="DateofBirth" id="DateofBirth" /><br /><br />
+
+        <label for="Email">E-mail</label>
+        <input type="email" name="Email" id="Email" /><br /><br />
+
+        <label for="Mobile">Mobile No</label>
+        <input type="number" name="Mobile" id="Mobile" /><br /><br />
+
+        <label for="Gender">Gender</label>
+        <input type="radio" value="Male" id="Male" name="Gender" />
+        <label for="Male">Male </label>
+        <input type="radio" value="Female" id="Female" name="Gender" />
+        <label for="Female">Female</label><br /><br />
+        <div class="bos">
+          <label for="Adress">Address</label>
+          <textarea name="Address" id="Address" cols="30" rows="5"></textarea
+          ><br /><br />
+        </div>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" /><br /><br />
+
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode" id="pincode" /><br /><br />
+
+        <label for="Country">Country</label>
+        <input type="text" name="Country" id="Country" /><br /><br />
+
+        <label for="Hobbies">Hobbies</label>
+        <input type="checkbox" name="Hobbies" id="Drawing" />
+        <label for="Drawing">Drawing</label>
+        <input type="checkbox" name="Hobbies" id="Singing" />
+        <label for="Singing">Singing</label>
+        <input type="checkbox" name="Hobbies" id="Dancing" />
+        <label for="Dancing">Dancing</label>
+        <input type="checkbox" name="Hobbies" id="Other" />
+        <label for="Other">Other</label>
+        <input type="text" name="Other" id="Other" /><br /><br />
+
+        <label for="Qualification">Qualification</label>
+        <table>
+          <tr>
+            <td>Board</td>
+            <td>Percentage</td>
+            <td>Year</td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+        <br /><br />
+
+        <label for="Courses">Courses Applied for</label>
+        <input type="radio" name="Courses" id="BCA" />
+        <label for="BCA">BCA</label>
+        <input type="radio" name="Courses" id="BCom" />
+        <label for="BCom">B.Com</label>
+        <input type="radio" name="Courses" id="BA" />
+        <label for="BA">BA</label><br /><br />
+
+        <input type="submit" name="submit" id="submit" />
+        <input type="reset" name="reset" id="reset" />
+      </form>
+    </div>
+  </body>
+</html>
