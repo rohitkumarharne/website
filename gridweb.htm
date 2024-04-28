@@ -65,7 +65,7 @@
       }
       .b2 {
         background: palegreen;
-        color: white;
+        color: black;
       }
       .b2 img {
         width: 100%;
@@ -104,7 +104,9 @@
       }
       @media only screen and (max-width: 500px) {
         .wrapper {
+          width: 100%;
           display: grid;
+          grid-template-columns: 1fr;
           grid-template-rows: 140px;
         }
         .b1 {
@@ -113,10 +115,10 @@
           grid-template-rows: 70px 70px;
         }
         .logo {
-          background: red;
+          /* background: red; */
         }
         .menu {
-          background: black;
+          /* background: black; */
         }
         .b3 {
           display: grid;
