@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .wrapper
+    {
+        width: 80%;
+        min-height: 100%;
+        margin: auto;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 60px 150px 300px 60px;
+    }
+
+    .item1
+    {
+        background: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .head
+    {
+        display: grid;
+        border:1px solid black;
+    }
+    .icon
+    {
+        /* display: grid; */
+        padding-top: 25px;
+        padding-left: 10px;
+        border: 1px solid black;
+    }
+    .icon a
+    {
+        padding: 10px;
+    }
+    .item2
+    {
+        background: yellow;
+    }
+    .item3
+    {
+        background: brown;
+    }
+    .item4
+    {
+        background: pink;
+    }
+    .item5
+    {
+        background: green;
+    }
+        @media only screen and (max-width: 400px) {
+            .item1
+            {
+                display: grid;
+                grid-template-columns: 500px;
+                grid-template-rows: 1fr;
+
+            }
+            .icon
+        /* {
+            display: grid;
+            grid-template-columns: 1fr;
+            background: black;
+            grid-template-rows: 100px;
+        }
+         */
+    }
+</style>
+<body>
+    <div class="wrapper">
+<div class="item1">
+    <div class="head">Company Name</div>
+    <div class="icon"><a href="#">Home</a>
+    <a href="#">About  
+    </a>
+    <a href="#">Product</a>
+    <a href="#">Services</a>
+    <a href="#">Contect</a>
+</div>
+</div>
+<div class="item2">
+    Menu
+</div>
+<div class="item3">
+    Slider
+        </div>
+        <div class="item4">
+            Main Cointent
+        </div>
+        <div class="item5">
+            Footer
+        </div>
+  
+</body>
+</html>
