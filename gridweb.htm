@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
       * {
         padding: 0;
@@ -107,7 +108,7 @@
           width: 80%;
           margin: auto;
           display: grid;
-          grid-template-columns: 400px;
+          grid-template-columns: 1fr;
           grid-template-rows: 140px;
         }
         .b1 {
@@ -166,7 +167,14 @@
         <div class="imgs"><img src="img/car.jpg" alt="" /></div>
       </div>
       <div class="b4">
-        <div class="imgs"><img src="img/car.jpg" alt="" /></div>
+        <div class="imgs">
+          <div class="camera-container">
+            <video id="video-feed" autoplay></video>
+            <button id="capture-btn">Capture</button>
+          </div>
+
+          <script src="script.js"></script>
+        </div>
         <div class="text">
           <h1>Product Infromation</h1>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
